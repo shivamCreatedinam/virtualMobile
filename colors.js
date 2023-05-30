@@ -1,0 +1,20 @@
+export default {
+    red: '#FF4C4C',
+    black: '#000000',
+    buttongreen: '#1C8186', //'#377E3F' ,//'#38A87F',
+    white: '#FFFFFF',
+    textBlack: '#312B25',
+    textgrey: '#817A75',
+    bgcolor: '#F9FAFC',
+    grey: '#a8a3a3',
+    lightgreen: '#E3F4F9',
+    lightgrey: 'rgb(236, 236, 237)',
+    gold: '#FFD66B',
+    yellow: '#F8D652',
+    brown: '#8E6436',
+    textLightgrey: '#A6A6A6',
+    palegreen: '#E3F4F9',
+    disableColor: '#A6A6A6',
+    theme: "#3A3D40",
+    bloodRed : "#952D28"
+    };
