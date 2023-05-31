@@ -75,14 +75,20 @@ export default function UpperSheetContainer() {
                             </View>
                         </View>
                         <View style={styles.up}>
-                             </View>
+                        </View>
                     </View>
                 </View>
                 <View style={{
                     backgroundColor: colors.theme, borderRadius: 15, height: Dimensions.get("screen").width - 315,
-                    width: "95%",display:'flex',alignSelf:'center' }}>
+                    width: "95%", display: 'flex', alignSelf: 'center'
+                }}>
+                    <View style={{ display: 'flex', justifyContent: 'center' }}>
+                        <Image source={bt} style={styles.htImg} />
+                    </View>
                     <View>
-
+                        <View>
+                            <Text></Text>
+                        </View>
                     </View>
                 </View>
             </View>

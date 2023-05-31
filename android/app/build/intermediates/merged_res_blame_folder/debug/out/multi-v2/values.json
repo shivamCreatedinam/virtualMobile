@@ -4,7 +4,26 @@
             "outputFile": "com.virtal_mobile.app-mergeDebugResources-27:/values/values.xml",
             "map": [
                 {
-                    "source": "/Users/okoders/Documents/virtual mobile/virtal_mobile/android/app/build/generated/res/resValues/debug/values/gradleResValues.xml",
+                    "source": "/Users/okoders/Documents/virtual screens/virtualMobile/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "54",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "267"
+                    },
+                    "to": {
+                        "startLines": "823",
+                        "startColumns": "4",
+                        "startOffsets": "59795",
+                        "endLines": "826",
+                        "endColumns": "12",
+                        "endOffsets": "59973"
+                    }
+                },
+                {
+                    "source": "/Users/okoders/Documents/virtual screens/virtualMobile/android/app/build/generated/res/resValues/debug/values/gradleResValues.xml",
                     "from": {
                         "startLines": "6,8",
                         "startColumns": "4,4",
@@ -54,23 +73,6 @@
                         "startOffsets": "37634,37703",
                         "endColumns": "68,56",
                         "endOffsets": "37698,37755"
-                    }
-                },
-                {
-                    "source": "/Users/okoders/Documents/virtual mobile/virtal_mobile/android/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "50",
-                        "endOffsets": "62"
-                    },
-                    "to": {
-                        "startLines": "693",
-                        "startColumns": "4",
-                        "startOffsets": "44267",
-                        "endColumns": "50",
-                        "endOffsets": "44313"
                     }
                 },
                 {
@@ -164,25 +166,6 @@
                         "endLines": "583,603,636,5835,5839",
                         "endColumns": "56,64,63,24,24",
                         "endOffsets": "37812,38767,40474,343851,344000"
-                    }
-                },
-                {
-                    "source": "/Users/okoders/Documents/virtual mobile/virtal_mobile/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "54",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "267"
-                    },
-                    "to": {
-                        "startLines": "823",
-                        "startColumns": "4",
-                        "startOffsets": "59795",
-                        "endLines": "826",
-                        "endColumns": "12",
-                        "endOffsets": "59973"
                     }
                 },
                 {
@@ -365,6 +348,23 @@
                         "startOffsets": "44184",
                         "endColumns": "82",
                         "endOffsets": "44262"
+                    }
+                },
+                {
+                    "source": "/Users/okoders/Documents/virtual screens/virtualMobile/android/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "50",
+                        "endOffsets": "62"
+                    },
+                    "to": {
+                        "startLines": "693",
+                        "startColumns": "4",
+                        "startOffsets": "44267",
+                        "endColumns": "50",
+                        "endOffsets": "44313"
                     }
                 },
                 {
