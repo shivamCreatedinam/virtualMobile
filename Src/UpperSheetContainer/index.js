@@ -60,10 +60,10 @@ export default function UpperSheetContainer() {
                             <View style={{ display: 'flex', flexDirection: 'column' }}>
                                 <View style={{ display: 'flex', flexDirection: 'row' }}>
                                     <View>
-                                        <Text style={styles.Screen}>Screen Recorder .</Text>
+                                        <Text style={styles.Screens}>Screen Recorder .</Text>
                                     </View>
                                     <View>
-                                        <Text style={styles.Screen}>00:08</Text>
+                                        <Text style={styles.Screens}>00:08</Text>
                                     </View>
                                 </View>
                                 <View style={{ marginTop: 15 }}>
@@ -80,15 +80,30 @@ export default function UpperSheetContainer() {
                 </View>
                 <View style={{
                     backgroundColor: colors.theme, borderRadius: 15, height: Dimensions.get("screen").width - 315,
-                    width: "95%", display: 'flex', alignSelf: 'center'
+                    width: "95%", display: 'flex', alignSelf: 'center', flexDirection: 'row'
                 }}>
-                    <View style={{ display: 'flex', justifyContent: 'center' }}>
-                        <Image source={bt} style={styles.htImg} />
-                    </View>
-                    <View>
-                        <View>
-                            <Text></Text>
+                    <View style={{ display: 'flex', flexDirection: 'row', width: '70%', justifyContent: 'space-around' }}>
+                        <View style={{ marginTop: 20 }}>
+                            <Image source={bt} style={styles.htImg} />
                         </View>
+                        <View style={{ display: 'flex', flexDirection: 'column' }}>
+                            <View style={{ marginTop: 20 }}>
+                                <Text style={{ color: colors.white, fontWeight: '500' }}>lokesh's Nothing ear(1)</Text>
+                            </View>
+                            <View style={{ marginTop: 10 }}>
+                                <Text style={{ color: colors.white, fontWeight: '500' }}>Left 80% Cases 80% Right 70%</Text>
+                            </View>
+                        </View>
+                    </View>
+                    {/* <View style={styles.down}>
+                    </View> */}
+                </View>
+                <View style={{display:'flex',flexDirection:'row',width:'93%',justifyContent:'space-between',marginTop:13}}>
+                    <View style={{ backgroundColor: colors.theme, borderRadius: 50, padding: 10, width: '24%',marginLeft:25 }}>
+                        <Text style={{ color: colors.white, fontWeight: '500', display: 'flex', alignSelf: 'center' }}>Manage</Text>
+                    </View>
+                    <View style={{ backgroundColor: colors.theme, borderRadius: 50, padding: 10, width: '24%' }}>
+                        <Text style={{ color: colors.white, fontWeight: '500', display: 'flex', alignSelf: 'center' }}>Clear all</Text>
                     </View>
                 </View>
             </View>
@@ -214,12 +229,24 @@ const styles = StyleSheet.create({
         fontWeight: '500',
         color: Colors.white
     },
+    Screens: {
+        fontSize: 12,
+        fontWeight: '500',
+        color: Colors.white
+    },
     up: {
         height: Dimensions.get("screen").width - 365,
         width: Dimensions.get("screen").width - 365,
         resizeMode: 'contain',
         backgroundColor: colors.white,
         borderRadius: 50
-    }
+    },
 
+    down: {
+        height: Dimensions.get("screen").width - 365,
+        width: Dimensions.get("screen").width - 365,
+        resizeMode: 'contain',
+        backgroundColor: colors.black,
+        borderRadius: 50
+    }
 })
