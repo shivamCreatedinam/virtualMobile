@@ -22,15 +22,15 @@ com.virtal_mobile.app-cardview-1.0.0-20 /Users/okoders/.gradle/caches/transforms
 com.virtal_mobile.app-transition-1.2.0-21 /Users/okoders/.gradle/caches/transforms-3/e32d4ee004e5151cc8aea47297e5af35/transformed/transition-1.2.0/res
 com.virtal_mobile.app-jetified-drawee-2.6.0-22 /Users/okoders/.gradle/caches/transforms-3/f4a65ce6ec58fd6d97bcb819934dfdd7/transformed/jetified-drawee-2.6.0/res
 com.virtal_mobile.app-coordinatorlayout-1.1.0-23 /Users/okoders/.gradle/caches/transforms-3/ff8cf5244b1452ffe5becfa7e824ee68/transformed/coordinatorlayout-1.1.0/res
-com.virtal_mobile.app-pngs-24 /Users/okoders/Documents/virtual screens/virtualMobile/android/app/build/generated/res/pngs/debug
-com.virtal_mobile.app-resValues-25 /Users/okoders/Documents/virtual screens/virtualMobile/android/app/build/generated/res/resValues/debug
-com.virtal_mobile.app-rs-26 /Users/okoders/Documents/virtual screens/virtualMobile/android/app/build/generated/res/rs/debug
-com.virtal_mobile.app-mergeDebugResources-27 /Users/okoders/Documents/virtual screens/virtualMobile/android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
-com.virtal_mobile.app-mergeDebugResources-28 /Users/okoders/Documents/virtual screens/virtualMobile/android/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
-com.virtal_mobile.app-merged_res-29 /Users/okoders/Documents/virtual screens/virtualMobile/android/app/build/intermediates/merged_res/debug
-com.virtal_mobile.app-debug-30 /Users/okoders/Documents/virtual screens/virtualMobile/android/app/src/debug/res
-com.virtal_mobile.app-main-31 /Users/okoders/Documents/virtual screens/virtualMobile/android/app/src/main/res
-com.virtal_mobile.app-packaged_res-32 /Users/okoders/Documents/virtual screens/virtualMobile/node_modules/react-native-gesture-handler/android/build/intermediates/packaged_res/debug
-com.virtal_mobile.app-packaged_res-33 /Users/okoders/Documents/virtual screens/virtualMobile/node_modules/react-native-safe-area-context/android/build/intermediates/packaged_res/debug
-com.virtal_mobile.app-packaged_res-34 /Users/okoders/Documents/virtual screens/virtualMobile/node_modules/react-native-screens/android/build/intermediates/packaged_res/debug
-com.virtal_mobile.app-packaged_res-35 /Users/okoders/Documents/virtual screens/virtualMobile/node_modules/react-native-vector-icons/android/build/intermediates/packaged_res/debug
+com.virtal_mobile.app-pngs-24 /Users/okoders/Documents/VirtualScreens/virtualMobile/android/app/build/generated/res/pngs/debug
+com.virtal_mobile.app-resValues-25 /Users/okoders/Documents/VirtualScreens/virtualMobile/android/app/build/generated/res/resValues/debug
+com.virtal_mobile.app-rs-26 /Users/okoders/Documents/VirtualScreens/virtualMobile/android/app/build/generated/res/rs/debug
+com.virtal_mobile.app-mergeDebugResources-27 /Users/okoders/Documents/VirtualScreens/virtualMobile/android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.virtal_mobile.app-mergeDebugResources-28 /Users/okoders/Documents/VirtualScreens/virtualMobile/android/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.virtal_mobile.app-merged_res-29 /Users/okoders/Documents/VirtualScreens/virtualMobile/android/app/build/intermediates/merged_res/debug
+com.virtal_mobile.app-debug-30 /Users/okoders/Documents/VirtualScreens/virtualMobile/android/app/src/debug/res
+com.virtal_mobile.app-main-31 /Users/okoders/Documents/VirtualScreens/virtualMobile/android/app/src/main/res
+com.virtal_mobile.app-packaged_res-32 /Users/okoders/Documents/VirtualScreens/virtualMobile/node_modules/react-native-gesture-handler/android/build/intermediates/packaged_res/debug
+com.virtal_mobile.app-packaged_res-33 /Users/okoders/Documents/VirtualScreens/virtualMobile/node_modules/react-native-safe-area-context/android/build/intermediates/packaged_res/debug
+com.virtal_mobile.app-packaged_res-34 /Users/okoders/Documents/VirtualScreens/virtualMobile/node_modules/react-native-screens/android/build/intermediates/packaged_res/debug
+com.virtal_mobile.app-packaged_res-35 /Users/okoders/Documents/VirtualScreens/virtualMobile/node_modules/react-native-vector-icons/android/build/intermediates/packaged_res/debug

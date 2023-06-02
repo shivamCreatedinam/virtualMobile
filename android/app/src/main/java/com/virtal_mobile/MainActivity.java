@@ -2,8 +2,11 @@ package com.virtal_mobile;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
+import com.facebook.react.ReactRootView;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.defaults.DefaultReactActivityDelegate;
+import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
+
 
 public class MainActivity extends ReactActivity {
 
@@ -25,7 +28,9 @@ public class MainActivity extends ReactActivity {
   protected ReactActivityDelegate createReactActivityDelegate() {
     return new DefaultReactActivityDelegate(
         this,
-        getMainComponentName(),
+        getMainComponentName(
+
+        ),
         // If you opted-in for the New Architecture, we enable the Fabric Renderer.
         DefaultNewArchitectureEntryPoint.getFabricEnabled(), // fabricEnabled
         // If you opted-in for the New Architecture, we enable Concurrent React (i.e. React 18).
@@ -33,3 +38,4 @@ public class MainActivity extends ReactActivity {
         );
   }
 }
+

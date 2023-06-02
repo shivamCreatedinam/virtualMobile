@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { View, Text, ImageBackground, StyleSheet, TextInput, Image, Dimensions, Button,TouchableOpacity } from 'react-native';
+import { View, Text, ImageBackground, StyleSheet, TextInput, Image, Dimensions, Button, TouchableOpacity } from 'react-native';
 import IconF from 'react-native-vector-icons/Feather';
 import IconI from 'react-native-vector-icons/Ionicons';
 import colors from '../../colors';
@@ -7,7 +7,7 @@ import { bacakgroundImage, google, camera, chrome, mic, lenses } from '../../ass
 import Slider from '../../Common/Slider';
 import RBSheet from "react-native-raw-bottom-sheet";
 import { useNavigation } from '@react-navigation/native';
-
+import { Directions, FlingGestureHandler, State } from "react-native-gesture-handler";
 
 
 const windowWidth = Dimensions.get('window').width;
@@ -17,14 +17,17 @@ const windowHeight = Dimensions.get('window').height;
 export default function HomeScreen() {
     const refRBSheet = useRef();
     const navigation = useNavigation();
+
     return (
+
         <View style={styles.container}>
+
             <ImageBackground source={bacakgroundImage} style={styles.Imagecontainer}>
                 <View style={styles.bottomIcons}>
                     <TouchableOpacity onPress={() => navigation.navigate("upper")}>
                         <Image source={chrome} style={styles.cameraIcon} />
                     </TouchableOpacity>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate("setting")}>
                         <Image source={chrome} style={styles.cameraIcon} />
                     </TouchableOpacity>
                     <View>
@@ -53,7 +56,7 @@ export default function HomeScreen() {
                         <Image source={lenses} style={styles.mic} />
                     </View>
                 </View>
-                <Button title="OPEN BOTTOM SHEET" onPress={() => refRBSheet.current.open()} />
+                {/* <Button title="OPEN BOTTOM SHEET" onPress={() => refRBSheet.current.open()} /> */}
                 <RBSheet
                     ref={refRBSheet}
                     closeOnDragDown={true}

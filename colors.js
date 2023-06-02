@@ -15,6 +15,14 @@ export default {
     textLightgrey: '#A6A6A6',
     palegreen: '#E3F4F9',
     disableColor: '#A6A6A6',
-    theme: "#3A3D40",
-    bloodRed : "#952D28"
+    theme: "#1A222D",
+    bloodRed : "#952D28",
+    orange: "#FF5733",
+    DullGrey: "#49505A",
+    OffWhite:"#9EA3AE",
+    Darkgrey:"#303841",
+    lightblue:"#D3E2FC",
+    lightPurple:"#7785A6",
+    DarkGray:"#2D3642"
+    
     };
