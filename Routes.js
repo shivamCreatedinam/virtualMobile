@@ -8,6 +8,7 @@ import UpperSheetContainer from './Src/UpperSheetContainer';
 import SettingsScreen from './Src/SettingsScreen';
 import GlyphInterface from './Src/GlyphInterface';
 import Apps from './Src/Apps';
+import Ringtones from './Src/Ringtones';
 
 
 
@@ -24,6 +25,7 @@ function Routes() {
         <Stack.Screen name="setting" component={SettingsScreen} />
         <Stack.Screen name="glyph" component={GlyphInterface} />
         <Stack.Screen name="apps" component={Apps} />
+        <Stack.Screen name="ringtone" component={Ringtones} />
    
       </Stack.Navigator>
     </NavigationContainer>

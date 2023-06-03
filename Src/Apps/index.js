@@ -1,7 +1,8 @@
 import React from "react";
-import { Text, View, StyleSheet, Dimensions, Image, TouchableOpacity } from "react-native";
+import { Text, View, StyleSheet, Dimensions, Image, TouchableOpacity ,ScrollView} from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import IconI from 'react-native-vector-icons/Ionicons';
+import colors from '../../colors';
 
 export default function Apps() {
     const navigation = useNavigation();

@@ -23,6 +23,7 @@ export default {
     Darkgrey:"#303841",
     lightblue:"#D3E2FC",
     lightPurple:"#7785A6",
-    DarkGray:"#2D3642"
+    DarkGray:"#2D3642",
+    purple:"#3B414A"
     
     };
