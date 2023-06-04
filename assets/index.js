@@ -11,5 +11,7 @@ export const data = require('./Icons/data.png');
 export const ht = require('./Icons/ht.png');
 export const bt = require('./Icons/battery.png');
 export const glyphLight = require('./Icons/glyphlight.png');
+export const photos = require('./Icons/photo.png');
+export const phone = require('./Icons/phone.png');
 
 export const gradientColors = ['#1C8186', '#1C8186'];

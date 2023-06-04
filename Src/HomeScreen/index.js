@@ -7,7 +7,7 @@ import { bacakgroundImage, google, camera, chrome, mic, lenses } from '../../ass
 import Slider from '../../Common/Slider';
 import RBSheet from "react-native-raw-bottom-sheet";
 import { useNavigation } from '@react-navigation/native';
-import { Directions, FlingGestureHandler, State } from "react-native-gesture-handler";
+import { Directions, GestureHandlerRootView, FlingGestureHandler, State } from 'react-native-gesture-handler';
 
 
 const windowWidth = Dimensions.get('window').width;
@@ -18,62 +18,96 @@ export default function HomeScreen() {
     const refRBSheet = useRef();
     const navigation = useNavigation();
 
+    const onFlingHandler = (event) => {
+        // console.log('addEventListener', JSON.stringify(event.nativeEvent) + " --- " + State.END);
+        if (event.nativeEvent.state === State.END) {
+            const { absoluteX, absoluteY } = event.nativeEvent;
+            // console.log('addEventListener', absoluteX + " --- " + absoluteY);
+            if (Math.abs(absoluteX) > Math.abs(absoluteY)) {
+                if (absoluteX > 0) {
+                    // Handle right fling gesture
+                    refRBSheet.current.open();
+                    console.log('addEventListener', 'Handle right');
+                } else {
+                    // Handle left fling gesture
+                    console.log('addEventListener', 'Handle left');
+                }
+            } else {
+                if (absoluteY > 0) {
+                    // Handle down fling gesture
+                    console.log('addEventListener', 'Handle down');
+                } else {
+                    // Handle up fling gesture
+                    refRBSheet.current.open();
+                    console.log('addEventListener', 'Handle up');
+                }
+            }
+        }
+    };
+
     return (
 
-        <View style={styles.container}>
+        <GestureHandlerRootView style={{ flex: 1 }}>
+            <FlingGestureHandler
+                direction={Directions.UP | Directions.DOWN}
+                onHandlerStateChange={onFlingHandler}>
 
-            <ImageBackground source={bacakgroundImage} style={styles.Imagecontainer}>
-                <View style={styles.bottomIcons}>
-                    <TouchableOpacity onPress={() => navigation.navigate("upper")}>
-                        <Image source={chrome} style={styles.cameraIcon} />
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={() => navigation.navigate("setting")}>
-                        <Image source={chrome} style={styles.cameraIcon} />
-                    </TouchableOpacity>
-                    <View>
-                        <Image source={chrome} style={styles.cameraIcon} />
-                    </View>
+                <View style={styles.container}>
 
-                    <View>
-                        <Image source={camera} style={styles.cameraIcon} />
-                    </View>
-                </View>
-                <View>
-                    <Slider />
-                </View>
-                <View style={styles.inputContainer}>
-                    <View>
-                        <TextInput style={styles.input} />
-                    </View>
+                    <ImageBackground source={bacakgroundImage} style={styles.Imagecontainer}>
+                        <View style={styles.bottomIcons}>
+                            <TouchableOpacity onPress={() => navigation.navigate("upper")}>
+                                <Image source={chrome} style={styles.cameraIcon} />
+                            </TouchableOpacity>
+                            <TouchableOpacity onPress={() => navigation.navigate("setting")}>
+                                <Image source={chrome} style={styles.cameraIcon} />
+                            </TouchableOpacity>
+                            <View>
+                                <Image source={chrome} style={styles.cameraIcon} />
+                            </View>
 
-                    <View style={{ position: 'absolute', left: 33, top: 15 }}>
-                        <Image source={google} style={styles.google} />
-                    </View>
-                    <View style={{ position: 'absolute', top: 13, right: 90 }}>
-                        <Image source={mic} style={styles.mic} />
-                    </View>
-                    <View style={{ position: 'absolute', top: 13, right: 45 }}>
-                        <Image source={lenses} style={styles.mic} />
-                    </View>
+                            <View>
+                                <Image source={camera} style={styles.cameraIcon} />
+                            </View>
+                        </View>
+                        <View>
+                            <Slider />
+                        </View>
+                        <View style={styles.inputContainer}>
+                            <View>
+                                <TextInput style={styles.input} />
+                            </View>
+
+                            <View style={{ position: 'absolute', left: 33, top: 15 }}>
+                                <Image source={google} style={styles.google} />
+                            </View>
+                            <View style={{ position: 'absolute', top: 13, right: 90 }}>
+                                <Image source={mic} style={styles.mic} />
+                            </View>
+                            <View style={{ position: 'absolute', top: 13, right: 45 }}>
+                                <Image source={lenses} style={styles.mic} />
+                            </View>
+                        </View>
+                        {/* <Button title="OPEN BOTTOM SHEET" onPress={() => } /> */}
+                        <RBSheet
+                            ref={refRBSheet}
+                            closeOnDragDown={true}
+                            closeOnPressMask={false}
+                            customStyles={{
+                                wrapper: {
+                                    backgroundColor: "transparent"
+                                },
+                                draggableIcon: {
+                                    backgroundColor: "#000"
+                                }
+                            }}
+                        >
+                            <Text>hi</Text>
+                        </RBSheet>
+                    </ImageBackground>
                 </View>
-                {/* <Button title="OPEN BOTTOM SHEET" onPress={() => refRBSheet.current.open()} /> */}
-                <RBSheet
-                    ref={refRBSheet}
-                    closeOnDragDown={true}
-                    closeOnPressMask={false}
-                    customStyles={{
-                        wrapper: {
-                            backgroundColor: "transparent"
-                        },
-                        draggableIcon: {
-                            backgroundColor: "#000"
-                        }
-                    }}
-                >
-                    <Text>hi</Text>
-                </RBSheet>
-            </ImageBackground>
-        </View>
+            </FlingGestureHandler>
+        </GestureHandlerRootView>
     );
 }
 

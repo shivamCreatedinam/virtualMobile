@@ -3,12 +3,16 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from './Src/HomeScreen';
-import UpperSheetContainer from './Src/UpperSheetContainer';
-import SettingsScreen from './Src/SettingsScreen';
-import GlyphInterface from './Src/GlyphInterface';
-import Apps from './Src/Apps';
-import Ringtones from './Src/Ringtones';
+import HomeScreen from './src/HomeScreen';
+import UpperSheetContainer from './src/UpperSheetContainer';
+import SettingsScreen from './src/SettingsScreen';
+import GlyphInterface from './src/GlyphInterface';
+import Apps from './src/Apps';
+import Ringtones from './src/Ringtones';
+import SelectRingtone from './src/SelectRingtone';
+import Network from './src/Network';
+import AboutPhone from './src/AboutPhone';
+import ExperimentalFeatures from './src/ExperimentalFeatures';
 
 
 
@@ -26,6 +30,11 @@ function Routes() {
         <Stack.Screen name="glyph" component={GlyphInterface} />
         <Stack.Screen name="apps" component={Apps} />
         <Stack.Screen name="ringtone" component={Ringtones} />
+        <Stack.Screen name="selectRingtone" component={SelectRingtone} />
+        <Stack.Screen name="network" component={Network} />
+        <Stack.Screen name="about" component={AboutPhone} />
+        <Stack.Screen name="experimental" component={ExperimentalFeatures} />
+   
    
       </Stack.Navigator>
     </NavigationContainer>

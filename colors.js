@@ -24,6 +24,7 @@ export default {
     lightblue:"#D3E2FC",
     lightPurple:"#7785A6",
     DarkGray:"#2D3642",
-    purple:"#3B414A"
+    purple:"#3B414A",
+    lightblack:"#2B2D2E"
     
     };

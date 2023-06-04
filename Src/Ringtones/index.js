@@ -24,10 +24,10 @@ export default function Ringtones() {
                     <View style={{ display: 'flex', alignSelf: 'center' }}>
                         <IconI name={'musical-note'} size={20} color={colors.white} style={{ marginLeft: 20 }} />
                     </View>
-                    <TouchableOpacity style={{ marginLeft: 20, marginTop: 5 }}>
+                    <TouchableOpacity style={{ marginLeft: 20, marginTop: 5 }} onPress={()=> navigation.navigate("selectRingtone")}>
                         <Text style={{ color: colors.white, fontSize: 20 }}>Default ringtone</Text>
                         <Text style={{ color: colors.OffWhite, fontSize: 16 }}>radiate</Text>
-                    </TouchableOpacity>
+                    </TouchableOpacity> 
                 </View>
                 <View style={{ marginLeft: 16, marginTop: 40, marginBottom: 10 }}>
                     <Text style={{ color: colors.lightblue, fontSize: 16 }}>Custom contacts</Text>

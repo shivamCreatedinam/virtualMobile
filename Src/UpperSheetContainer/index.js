@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { View, Text, ImageBackground, StyleSheet, TextInput, Image, Dimensions, Button, ScrollView, TouchableOpacity } from 'react-native';
 import colors from '../../colors';
 import { bluetooth, data, ht, bt } from '../../assets/index';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
 import Slider from "react-native-slider";
+import UpperSheetCarousel from '../../Common/UpperSheetCarousel';
 
 
 export default function UpperSheetContainer() {
@@ -181,12 +181,16 @@ export default function UpperSheetContainer() {
                         </View>
                     </View>
                 </View>
-                <View style={{padding:15}}>
+                <View style={{ padding: 15 }}>
                     <Slider
                         value={value}
                         onValueChange={(value) => svalue(value)} />
                 </View>
+                <View>
+                    <UpperSheetCarousel />
+                </View>
             </View>
+
             }
 
         </ScrollView>
@@ -333,12 +337,12 @@ const styles = StyleSheet.create({
     Screen: {
         fontSize: 14,
         fontWeight: '500',
-        color: Colors.white
+        color: colors.white
     },
     Screens: {
         fontSize: 12,
         fontWeight: '500',
-        color: Colors.white
+        color: colors.white
     },
     up: {
         height: Dimensions.get("screen").width - 370,
