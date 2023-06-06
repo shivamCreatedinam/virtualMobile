@@ -114,7 +114,7 @@ export default function UpperSheetContainer() {
                         </View>
                     </View>
                 </View>
-            </View> : <View style={{}}>
+            </View> : <View style={{backgroundColor:colors?.black}}>
                 <View style={{ display: 'flex', flexDirection: 'row', width: '100%', justifyContent: 'space-around' }}>
                     <View style={styles.subContainerElse}>
                         {/* <View style={styles.jio}></View> */}
@@ -186,9 +186,9 @@ export default function UpperSheetContainer() {
                         value={value}
                         onValueChange={(value) => svalue(value)} />
                 </View>
-                <View>
+                {/* <View> */}
                     <UpperSheetCarousel />
-                </View>
+                {/* </View> */}
             </View>
 
             }
@@ -199,7 +199,7 @@ export default function UpperSheetContainer() {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
     },
     subContainer: {
         marginTop: 25,
